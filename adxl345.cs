@@ -14,18 +14,15 @@ public class adxl345
 	// '1' oznacza nr szyny danych dla RPi 512Mb 
 	// 0x53 adres urządzenia adxl345
 	// 0x32 do 0x37 rejestry odpowiedzialne za pakiet danych X,Y,Z
-	private string i2cgetDataX0 = "-y 1 0x53 0x32"; 
-	private string i2cgetDataX1 = "-y 1 0x53 0x33"; 
-	private string i2cgetDataY0 = "-y 1 0x53 0x34"; 
+    private string i2cgetDataX0 = "-y 1 0x53 0x32"; 
+    private string i2cgetDataX1 = "-y 1 0x53 0x33"; 
+    private string i2cgetDataY0 = "-y 1 0x53 0x34"; 
 	private string i2cgetDataY1 = "-y 1 0x53 0x35"; 
 	private string i2cgetDataZ0 = "-y 1 0x53 0x36"; 
 	private string i2cgetDataZ1 = "-y 1 0x53 0x37"; 
 	
 	private string hexString = "";
-
-
-
-		private Process p;
+	private Process p;
 
     public adxl345()
     {
